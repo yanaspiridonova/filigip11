@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-scrapbook-source="http://hk9.toooutlet.com/" data-scrapbook-create="20200720061835188">
+<html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -362,9 +362,9 @@
 
     </div>
     <footer>
-        <a href="http://hk9.toooutlet.com/terms.html" target="_blank">Terms &amp; Conditions </a>   |
-        <a href="http://hk9.toooutlet.com/privacypolicy.html" target="_blank">Privacy Policy</a>       |
-        <a target="blank" href="http://hk9.toooutlet.com/returns.html">Returns, Refunds and Exchanges Policy</a>
+        <a href="https://yanaspiridonova.github.io/filigip11//terms.html" target="_blank">Terms &amp; Conditions </a>   |
+        <a href="https://yanaspiridonova.github.io/filigip11//privacypolicy.html" target="_blank">Privacy Policy</a>       |
+        <a target="blank" href="https://yanaspiridonova.github.io/filigip11//returns.html">Returns, Refunds and Exchanges Policy</a>
 
     </footer>
     
@@ -372,12 +372,73 @@
     
     
 <!-- UNILAND START -->
+<script type="text/javascript" src="https://uni-pov.orthofix.space/app/web/js/uniland.js?5f1545a4891a0"></script>
+<script type="text/javascript">
+    var scripts = [];
+    start = Date.now();
 
+    var uniland = new Uniland();
 
-<noscript>
+    uniland.prelandMode = 0;
+    uniland.landId = 734;
+    uniland.landUrl = "https://yanaspiridonova.github.io/filigip11/index.html?marker_id=2";
+
+        //названия полей формы, откуда скрипт берет данные
+    //    uniland.aliasName = 'name';
+    //    uniland.aliasEmail = 'email';
+    //    uniland.aliasPhone = 'phone';
+    //    uniland.aliasCountry = 'country';
+    //    uniland.aliasComment = 'comment';
+
+    uniland.aliasGoodCode = 'good_code'; //код продукта из списка
+    uniland.aliasGoodsCount = 'goods_count';//выбранное количество
+    uniland.aliasGoodPrice = 'good_price';//цена за шт
+
+    uniland.urlOrder = 'https://uni-pov.orthofix.space/app/web/api/order';
+    uniland.urlEmail = 'https://uni-pov.orthofix.space/app/web/api/email/get';
+    uniland.sendEmptyForm = true; //поставить false, чтобы не отправлять конверсии с пустыми полями
+
     
+
+
+    uniland.urlPixel = 'https://uni-pov.orthofix.space/app/web/api/pixel';
+
+    uniland.processPixel();
+
+    uniland.setSpanValueByClass('mt_geo', uniland.getMtGeo('Москва'));
+    uniland.setSpanValueByClass('mt_gender', uniland.getMtGender('Женщин'));
+    uniland.setSpanValueByClass('mt_age', uniland.getMtAge('55'));
+
+    //проверяем есть ли JQ
+    if (!window.jQuery) {
+        scripts.push('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js');
+    }
+
+    scripts.forEach(function (src) {
+        var jq = document.createElement('script');
+        jq.type = 'text/javascript';
+        jq.src = src;
+        document.getElementsByTagName('head')[0].appendChild(jq);
+    });
+
+    function init() {
+        if (window.jQuery) {
+            $(document).ready(function () {
+                uniland.run();
+            });
+        }
+    }
+
+    //ждем 1 сек пока все загрузится и вешаем события
+    setTimeout(init, 1000);
+</script>
+<noscript>
+    <div><img src="https://uni-pov.orthofix.space/app/web/api/pixel?land_id=734" style="position:absolute; left:-9999px;"
+              alt=""/></div>
 </noscript>
 <!-- UNILAND END -->
+
+
 
 
 
